@@ -76,6 +76,18 @@ This means that `dom-delegator` will recognise the event handler
   on that element and correctly call your handler when an a click
   event happens.
 
+### Custom attributes and inline styles
+
+If you need to set custom attributes on a VNode, such as `data-*`
+  use `h('div', { attributes: { 'data-foo': 'bar' } })`
+
+If you need to set inline style on a VNode, such as `color: red`
+  use `h('div', { style: { color: 'red' } })`
+
+Note that this is a VNode feature, not just `h`,
+  see [docs](https://github.com/Matt-Esch/virtual-dom/blob/master/docs.jsig)
+  for details.
+
 ## Installation
 
 `npm install virtual-dom`
